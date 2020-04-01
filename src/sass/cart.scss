@@ -1,0 +1,193 @@
+@import "indexheader.scss";
+@import "indexfooter.scss";
+input{
+    margin: 0;
+    padding: 0;
+};
+.center{
+    width: 1200px;
+    margin: 0 auto;
+    .mycart{
+        line-height: 50px;
+        font-size: 20px;
+        color: #0069aa;
+        padding-top: 40px;
+        font-weight: bold;
+    };
+    .cart_box{
+        border: 1px solid #e3e3e3;
+        .cart_header{
+            line-height: 30px;
+            padding: 10px 15px;
+            border-bottom: 1px solid #e3e3e3;
+            font-size: 18px;
+            font-weight: bold;
+            color: #666;
+            font-family: "iconfont";
+            background-color: #fafafa;
+            i{
+                margin-right: 5px;
+                font-size: 30px;
+                vertical-align: middle;
+                font-weight: normal;
+            }
+        };
+        .list_header{
+            overflow: hidden;
+            color: #666;
+            font-size: 12px;
+            line-height: 50px;
+            .chkbox{
+                padding: 18px;
+                float: left;
+                .chk{
+                    margin: 0;
+                    padding: 0;
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                }
+            };
+            p{
+                float: left;
+                text-align: center;
+            };
+            .info{
+                width: 325px;
+            };
+            .price,.num,.weight,.total,.oper{
+                width: 160px;;
+            };
+        };
+        .list_footer{
+            overflow: hidden;
+            border-top: 1px solid #e3e3e3;
+            background: #f8f8f8;
+            font-size: 12px;
+            .deleteall{
+                float: left;
+                width: 200px;
+                text-align: center;
+                a{
+                    color: #0069aa;
+                    line-height: 60px;
+                }
+            };
+            .settle,.total-price{
+                float: right;
+            };
+            .settle{
+                display: block;
+                width: 120px;
+                line-height: 60px;
+                font-size: 18px;
+                background: #6cae38;
+                color: #fff;
+                text-align: center;
+            };
+            .total-price{
+                height: 40px;
+                padding: 10px 0;
+                margin-right: 20px;
+                line-height: 20px;
+                .num{
+                    margin: 0 5px;
+                    color: #0069aa;
+                    font-size: 14px;
+                    font-weight: bold;
+                    span{
+                        font-size: 18px;
+                    }
+                }
+            }
+        };
+        .list_center{            
+                .list_card{
+                height: 90px;
+                padding: 20px 0;
+                border-top: 1px solid #f7f7f7; 
+                overflow: hidden;
+                .num-box{
+                    overflow: hidden;
+                    float: left;
+                    input{
+                        display: block;
+                        float: left;
+                    }
+                };
+                .chkbox{
+                    float: left;
+                    width: 50px;
+                    text-align: center;
+                    .chk{
+                        width: 14px;
+                        height: 14px;
+                    }
+                };
+                .info{
+                    float: left;
+                    width: 325px;
+                    img{
+                        float: left;
+                    };
+                    p{
+                        height: 40px;
+                        line-height: 20px;
+                        margin-left: 105px;
+                        font-size: 12px;
+                    }
+                };
+                .unit-price,.num-box,.weight,.total,.delete{
+                    text-align: center;
+                    width: 160px;
+                    float: left;
+                };
+                .unit-price{
+                    font-size: 14px;
+                };
+                .num-box{
+                    .addbox{
+                        width: 108px;
+                        overflow: hidden;
+                        border: 1px solid #dfdfdf;
+                        height: 26px;
+                        border-radius: 2px;
+                        line-height: 26px;
+                        margin: 0 auto;
+                        div,input{
+                            display: block;
+                            float: left;
+                            text-align: center;
+                        };
+                        div{
+                            width: 26px;                            
+                            font-size: 16px;
+                            cursor: pointer;
+                        };
+                        input{
+                            width: 54px;
+                            height: 18px;
+                            border: 1px solid #dfdfdf;
+                            border-top: 0;
+                            border-bottom: 0;
+                            margin-top: 3px;
+                        };
+                    }
+                };
+                .weight{
+                    font-size: 12px;
+                };
+                .total{
+                    font-weight: bold;
+                    color: #0069aa;
+                };
+                .delete{
+                    font-family: "iconfont";
+                    a{
+                       color: #666; 
+                    }
+                }
+            }
+        }
+    }
+};

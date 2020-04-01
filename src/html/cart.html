@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/cart.css">
+    <style>
+        @font-face {
+            font-family: iconfont;
+            src: url(../font/iconfont.woff) format("woff");
+        };
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+            <div class="header_top">
+                <div class="header_top_center clear_fix">
+                    <div class="welcome">山姆欢迎您！<a href="login.html">登录</a><i>|</i><a href="register.html">注册</a></div>
+                    <div class="welcome_right clear_fix"><a href="javascript:">我的山姆<i></i></a>
+                        <div class="line"></div><a href="javascript:">我的山姆<i></i></a>
+                        <div class="line"></div><a href="javascript:">我的山姆<i></i></a>
+                        <div class="line"></div><a href="javascript:">我的山姆</a>
+                        <div class="line"></div><a href="javascript:">我的山姆<i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_center">
+                <div class="header_center_center clear_fix">
+                    <a class="logo" href="javascript:">
+                        <img src="../img/logo.png" alt="">
+                    </a>
+                    <div class="address">
+                        <i></i><em>深圳市</em><span>福田区农林路69号印力中心</span>
+                    </div>
+                    <div class="search clear_fix">
+                        <input type="text">
+                        <div class="search_button"></div>
+                        <a href="javascript:" class="goods">
+                            <div class="goods_num">0</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_nav">
+                <div class="header_nav_center clear_fix">
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">极速达</a>
+                        <div class="nav2">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 512px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 512px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 384px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 640px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 640px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 640px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 640px;right: 0;margin-right: -2px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">生鲜食品</a>
+                        <div class="nav2" style="width: 640px;right: 0;margin-right: -2px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">极速达</a>
+                        <div class="nav2" style="width: 640px;right: 0;margin-right: -2px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbox">
+                        <a class="navlist" href="javascript:">智能家电</a>
+                        <div class="nav2" style="width: 640px;right: 0;margin-right: -2px;">
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                            <div class="nav2box">
+                                <p class="nav2box_top"><a href="javascript:">新鲜水果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                                <p class="nav2box_bottom"><a href="javascript:">莓类/奇异果</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 中间部分 -->
+    <div class="center">
+        <h2 class="mycart">我的购物车</h2>
+        <div class="cart_box">
+            <div class="cart_header">
+                <i></i>
+                普通商品
+            </div>
+            <div class="list_header">
+                <div class="chkbox">
+                    <input class="chk" type="checkbox">
+                </div>
+                <p class="info">商品信息</p>
+                <p class="price">单价（元）</p>
+                <p class="num">数量</p>
+                <p class="weight">重量（含包装）</p>
+                <p class="total">小计（元）</p>
+                <p class="oper">操作</p>
+            </div>
+            <div class="list_center">
+                
+            </div>
+
+
+
+
+
+
+
+
+            <div class="list_footer">
+                <p class="deleteall"><a href="javascript:">批量删除</a></p>
+                <a class="settle" href="javascript:">去结算</a>
+                <div class="total-price">
+                    <p>合计</p>
+                    <p class="num"><i>¥</i><span></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="footer_center">
+            <div class="footer_nav clear_fix">
+                <div class="footerlogo">
+                    <img src="../img/footlogo.png" alt="">
+                    <p>山姆会员网上商店</p>
+                    <p>沃尔玛成员</p>
+                </div>
+                <div class="footer_navbox">
+                    <a class="fnb_first" href="javascript:">新手指南</a>
+                    <div class="margintop_15">
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                    </div>
+                </div>
+                <div class="footer_navbox">
+                    <a class="fnb_first" href="javascript:">新手指南</a>
+                    <div class="margintop_15">
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                    </div>
+                </div>
+                <div class="footer_navbox">
+                    <a class="fnb_first" href="javascript:">新手指南</a>
+                    <div class="margintop_15">
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                    </div>
+                </div>
+                <div class="footer_navbox">
+                    <a class="fnb_first" href="javascript:">新手指南</a>
+                    <div class="margintop_15">
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                    </div>
+                </div>
+                <div class="footer_navbox">
+                    <a class="fnb_first" href="javascript:">新手指南</a>
+                    <div class="margintop_15">
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                    </div>
+                </div>
+                <div class="footer_navbox">
+                    <a class="fnb_first" href="javascript:">新手指南</a>
+                    <div class="margintop_15">
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                        <a href="javascript:">会籍介绍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p><a href="javascript:">关于山姆</a>｜<a href="javascript:">关于山姆</a>｜<a href="javascript:">关于山姆</a>｜<a
+                        href="javascript:">关于山姆</a></p>
+                <p>2010-2019 中国沃沃沃 版权所有｜<a href="javascript:">沪ICP备XXXXXX号-1</a>｜<a href="javascript:">
+                        <img src="../img/CgQIzleYb4OAKANeAABLOOn9ZJA30600.png" alt="">
+                        浙公网安备 xxxxxxxxxxxxxx号</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../script/jquery.js"></script>
+<script src="../script/jscookie.js"></script>
+<script src="../script/welcome.js"></script>
+<script src="../script/cart.js"></script>
+</html>

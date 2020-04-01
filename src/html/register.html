@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/register.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="../img/footlogo.png" alt=""></a>
+        <div>
+            <p>欢迎注册</p>
+        </div>
+    </div>
+    <form action="http://localhost/xiangmu/php/register.php" method="post">
+        <div class="regbox">
+            <input class="user username" type="text" name="username" autocomplete="off" placeholder="请输入4-16位字母和数字组成的用户名">
+            <p></p>
+            <input class="user email" type="text" name="email" autocomplete="off" placeholder="邮箱地址">
+            <p></p>
+            <input class="user password" type="password" name="password" autocomplete="off" placeholder="请输入8到16位包含至少一个大写和一个小写的密码">
+            <p></p>
+            <input class="user password_again" type="password" autocomplete="off" placeholder="确认密码">
+            <p></p>
+            <input class="post" type="submit" name="submit" value="提交">
+        </div>
+    </form>
+</body>
+<script src="../script/jquery.js"></script>
+<script src="../script/register.js"></script>
+</html>

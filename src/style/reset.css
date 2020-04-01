@@ -1,0 +1,40 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,figure,figcaption,fieldset,legend{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+ol,ul,li{
+    list-style: none;
+}
+b,strong{
+    font-weight: normal;
+}
+em,i{
+    font-style: normal;
+}
+a,u{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+input{
+    outline: none;
+}
+.clear_fix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+

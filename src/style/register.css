@@ -1,0 +1,69 @@
+.header {
+  background-color: #f8f8f8;
+  overflow: hidden; }
+.header img {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto 0; }
+.header div {
+  width: 190px;
+  height: 30px;
+  border-bottom: 1px solid #b3b3b3;
+  margin: 0 auto 75px;
+  position: relative; }
+.header p {
+  background: #f8f8f8;
+  padding: 0 20px;
+  line-height: 30px;
+  color: #333;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  white-space: nowrap; }
+
+form {
+  border-top: 1px solid #eee;
+  padding: 30px 0; }
+
+.regbox {
+  width: 442px;
+  margin: 0 auto; }
+.regbox .user {
+  display: block;
+  width: 440px;
+  height: 34px;
+  border: 1px solid #dcdcdc;
+  border-radius: 2px;
+  text-indent: 10px;
+  font-size: 14px; }
+.regbox p {
+  height: 32px;
+  text-indent: 10px;
+  line-height: 32px;
+  color: #F22727;
+  font-size: 12px; }
+
+.user:focus {
+  border: 1px solid #00abdd; }
+
+.post {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 3px;
+  background: #006aaf;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold; }
+
+.post:hover {
+  background-color: #005f9e; }
+
+/*# sourceMappingURL=register.css.map */

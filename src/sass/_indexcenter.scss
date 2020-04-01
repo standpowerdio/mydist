@@ -1,0 +1,123 @@
+.floor{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+};
+.only_for_you_center,.best_buy_center{
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+};
+.only_for_you_box_first,.only_for_you_box,.best_buy_box_first,.best_buy_box{
+    height: 305px;
+    width: 250px;
+};
+.only_for_you_box_first{
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+};
+.only_for_you_box_first{
+    background: url(../img/member_bg.png);
+};
+.only_for_you_box_first img{
+    width: 80px;
+    height: 80px;
+    margin: 30px auto 0;
+};
+.only_for_you_box_first p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+};
+.member_list{
+    margin-left: 250px;
+    width: 1500px;
+};
+.only_for_you_box,.best_buy_box{
+    position: relative;
+    float: left;
+};
+.only_for_you_box a,.best_buy_box a{
+    position: absolute;
+    display: block;
+    margin: 12px;
+    width: 226px;
+    height: 281px;
+    top: 0;
+};
+.only_for_you_box img,.best_buy_box img{
+    width: 226px;
+    height: 226px;
+    margin-bottom: 5px;
+};
+.only_for_you_box p,.best_buy_box p{
+    width: 92%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #333;
+    padding: 5px 8px;
+};
+.price{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+};
+.floor_best{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+};
+.best_buy_list{
+    margin-left: 250px;
+};
+.best_buy_box_first{
+    background: url(http://d7.samsclub-estore.com/N08/M08/A5/E1/ChEi1FsLqBSAILkqAABSSh3E8vI71500.jpg) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+};
+.best_buy{
+    margin-bottom: 30px;
+};
+.best_buy_title{
+    display: block;
+    font-size: 24px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: bold;
+};
+.best_buy_title2{
+    padding-left: 20px;
+    font-size: 18px;
+    color: #fff;
+};
+.fresh_list{
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+};
+.fresh_list p{
+    width: 50%;
+    float: left;
+    text-align: center;
+};
+.fresh_list a{
+    color: #eee;
+    font-size: 12px;
+    line-height: 20px;
+}

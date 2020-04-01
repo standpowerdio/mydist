@@ -1,0 +1,46 @@
+@import "loginheader.scss";
+form{
+    border-top: 1px solid #eee;
+    padding: 30px 0;
+};
+.regbox{
+    width: 442px;
+    margin: 0 auto;
+    .user{
+        display: block;
+        width: 440px;
+        height: 34px;
+        border: 1px solid #dcdcdc;
+        border-radius: 2px;
+        text-indent: 10px;
+        font-size: 14px;
+    };
+    p{
+        height: 32px;
+        text-indent: 10px;
+        line-height: 32px;
+        color: #F22727;
+        font-size: 12px;
+    };
+};
+.user:focus{
+    border: 1px solid #00abdd;
+};
+.post{
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 3px;
+    background: #006aaf;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+};
+.post:hover{
+    background-color: #005f9e;
+}
