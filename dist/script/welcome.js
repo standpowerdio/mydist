@@ -1,0 +1,1 @@
+"use strict";!function(e){jscookie.get("loginname")&&(e(".welcome").html("\n        "+jscookie.get("loginname")+'\n        山姆欢迎您！\n        <a href="javascript:">退出</a>\n        '),e(".welcome a").on("click",function(){jscookie.del("loginname"),location.reload()}))}(jQuery);
